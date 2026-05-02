@@ -412,7 +412,7 @@
       <o id="61" skillchain_a="Light" skillchain_b="Fragmentation" skillchain_c="" /> <!-- Dimidiation -->
       <o id="62" skill="4" skillchain_a="Detonation" skillchain_b="Compression" skillchain_c="Distortion" /> <!-- Fimbulvetr -->
       <o id="64" skillchain_a="Detonation" skillchain_b="Impaction" skillchain_c="" /> <!-- Raging Axe -->
-      <o id="65" skillchain_a="Impaction" skillchain_b="Reverberation" skillchain_c="" /> <!-- Smash Axe -->
+      <o id="65" skillchain_a="Induration" skillchain_b="Reverberation" skillchain_c="" /> <!-- Smash Axe -->
       <o id="66" skillchain_a="Detonation" skillchain_b="" skillchain_c="" /> <!-- Gale Axe -->
       <o id="67" skillchain_a="Scission" skillchain_b="Impaction" skillchain_c="" /> <!-- Avalanche Axe -->
       <o id="68" skillchain_a="Liquefaction" skillchain_b="Scission" skillchain_c="Impaction" /> <!-- Spinning Axe -->
@@ -862,11 +862,17 @@
       <o id="23" duration="60" status="134" /> <!-- Dia -->
       <o id="24" duration="120" status="134" overwrites="{23,230}" /> <!-- Dia II -->
       <o id="25" duration="180" status="134" overwrites="{23,24,230,231}" /> <!-- Dia III -->
-      <o id="26" duration="90" status="134" overwrites="{23,24,25,230,231,232}" /> <!-- Dia IV -->
+      <o id="26" duration="90" status="134" overwrites="{23,24,25,230,231,232}" unlearnable="true" /> <!-- Dia IV -->
+      <o id="27" duration="90" status="134" overwrites="{23,24,25,26,230,231,232}" unlearnable="true" /> <!-- Dia V -->
       <o id="31" unlearnable="true" /> <!-- Banish IV -->
+      <o id="32" unlearnable="true" /> <!-- Banish V -->
       <o id="34" unlearnable="true" /> <!-- Diaga II -->
       <o id="35" unlearnable="true" /> <!-- Diaga III -->
+      <o id="36" unlearnable="true" /> <!-- Diaga IV -->
+      <o id="37" unlearnable="true" /> <!-- Diaga V -->
       <o id="40" unlearnable="true" /> <!-- Banishga III -->
+      <o id="41" unlearnable="true" /> <!-- Banishga IV -->
+      <o id="42" unlearnable="true" /> <!-- Banishga V -->
       <o id="43" duration="1800" status="40" /> <!-- Protect -->
       <o id="44" duration="1800" status="40" overwrites="{43}" /> <!-- Protect II -->
       <o id="45" duration="1800" status="40" overwrites="{43,44}" /> <!-- Protect III -->
@@ -953,14 +959,34 @@
       <o id="138" status="70" /> <!-- Deodorize -->
       <o id="141" duration="3600" status="113" /> <!-- Reraise II -->
       <o id="142" duration="3600" status="113" /> <!-- Reraise III -->
+      <o id="177" unlearnable="true" /> <!-- Firaga IV -->
+      <o id="178" unlearnable="true" /> <!-- Firaga V -->
+      <o id="182" unlearnable="true" /> <!-- Blizzaga IV -->
+      <o id="183" unlearnable="true" /> <!-- Blizzaga V -->
+      <o id="187" unlearnable="true" /> <!-- Aeroga IV -->
+      <o id="188" unlearnable="true" /> <!-- Aeroga V -->
+      <o id="192" unlearnable="true" /> <!-- Stonega IV -->
+      <o id="193" unlearnable="true" /> <!-- Stonega V -->
+      <o id="197" unlearnable="true" /> <!-- Thundaga IV -->
+      <o id="198" unlearnable="true" /> <!-- Thundaga V -->
+      <o id="202" unlearnable="true" /> <!-- Waterga IV -->
+      <o id="203" unlearnable="true" /> <!-- Waterga V -->
       <o id="216" duration="120" status="12" /> <!-- Gravity -->
       <o id="217" duration="120" status="12" overwrites="{216}" /> <!-- Gravity II -->
       <o id="220" duration="90" status="3" /> <!-- Poison -->
       <o id="221" duration="120" status="3" overwrites="{220,350,351,352}" /> <!-- Poison II -->
+      <o id="222" unlearnable="true" status="3" overwrites="{220,221,350,351,352}" /> <!-- Poison III -->
+      <o id="223" unlearnable="true" status="3" overwrites="{220,221,222,350,351,352}" /> <!-- Poison IV -->
+      <o id="224" unlearnable="true" status="3" overwrites="{220,221,222,223,350,351,352}" /> <!-- Poison V -->
       <o id="226" unlearnable="true" /> <!-- Poisonga II -->
+      <o id="227" unlearnable="true" /> <!-- Poisonga III -->
+      <o id="228" unlearnable="true" /> <!-- Poisonga IV -->
+      <o id="229" unlearnable="true" /> <!-- Poisonga V -->
       <o id="230" duration="60" status="135" overwrites="{23}" /> <!-- Bio -->
       <o id="231" duration="120" status="135" overwrites="{23,24,230}" /> <!-- Bio II -->
       <o id="232" duration="30" status="135" overwrites="{23,24,25,230,231}" /> <!-- Bio III -->
+      <o id="233" unlearnable="true" duration="30" status="135" overwrites="{23,24,25,230,231,232}" /> <!-- Bio IV -->
+      <o id="234" unlearnable="true" duration="30" status="135" overwrites="{23,24,25,230,231,232,233}" /> <!-- Bio V -->
       <o id="235" duration="90" status="128" overwrites="{236}" /> <!-- Burn -->
       <o id="236" duration="90" status="129" overwrites="{237}" /> <!-- Frost -->
       <o id="237" duration="90" status="130" overwrites="{238}" /> <!-- Choke -->
@@ -978,6 +1004,7 @@
       <o id="257" status="9" unlearnable="true" /> <!-- Curse -->
       <o id="258" duration="60" status="11" /> <!-- Bind -->
       <o id="259" duration="90" status="2" overwrites="{253,273}" /> <!-- Sleep II -->
+      <o id="265" unlearnable="true" /> <!-- Tractor II -->
       <o id="273" duration="60" status="2" /> <!-- Sleepga -->
       <o id="274" duration="90" status="2" overwrites="{253,273}" /> <!-- Sleepga II -->
       <o id="276" duration="180" status="5" overwrites="{254,347,348,349}" /> <!-- Blind II -->
@@ -1031,6 +1058,7 @@
       <o id="363" unlearnable="true" /> <!-- Sleepga -->
       <o id="364" unlearnable="true" /> <!-- Sleepga II -->
       <o id="365" duration="30" status="7" /> <!-- Breakga -->
+      <o id="366" duration="30" status="7" unlearnable="true" /> <!-- Graviga -->
       <o id="368" duration="60" status="192" /> <!-- Foe Requiem -->
       <o id="369" duration="120" status="192" overwrites="{368}" /> <!-- Foe Requiem II -->
       <o id="370" duration="120" status="192" overwrites="{368,369}" /> <!-- Foe Requiem III -->
@@ -1038,7 +1066,7 @@
       <o id="372" duration="120" status="192" overwrites="{368,369,370,371}" /> <!-- Foe Requiem V -->
       <o id="373" duration="120" status="192" overwrites="{368,369,370,371,372}" /> <!-- Foe Requiem VI -->
       <o id="374" duration="120" status="192" overwrites="{368,369,370,371,372,373}" /> <!-- Foe Requiem VII -->
-      <o id="375" duration="120" status="192" overwrites="{368,369,370,371,372,373,374}" /> <!-- Foe Requiem VIII -->
+      <o id="375" duration="120" status="192" overwrites="{368,369,370,371,372,373,374}" unlearnable="true" /> <!-- Foe Requiem VIII -->
       <o id="376" duration="45" status="2" /> <!-- Horde Lullaby -->
       <o id="377" duration="90" status="2" overwrites="{376,463}" /> <!-- Horde Lullaby II -->
       <o id="378" duration="120" status="195" /> <!-- Army's Paeon -->
@@ -1047,8 +1075,8 @@
       <o id="381" duration="120" status="195" /> <!-- Army's Paeon IV -->
       <o id="382" duration="120" status="195" /> <!-- Army's Paeon V -->
       <o id="383" duration="120" status="195" /> <!-- Army's Paeon VI -->
-      <o id="384" duration="120" status="195" /> <!-- Army's Paeon VII -->
-      <o id="385" duration="120" status="195" /> <!-- Army's Paeon VIII -->
+      <o id="384" duration="120" status="195" unlearnable="true" /> <!-- Army's Paeon VII -->
+      <o id="385" duration="120" status="195" unlearnable="true" /> <!-- Army's Paeon VIII -->
       <o id="386" duration="120" status="196" /> <!-- Mage's Ballad -->
       <o id="387" duration="120" status="196" /> <!-- Mage's Ballad II -->
       <o id="388" duration="120" status="196" /> <!-- Mage's Ballad III -->
@@ -1074,9 +1102,9 @@
       <o id="408" duration="120" status="205" /> <!-- Shining Fantasia -->
       <o id="409" duration="120" status="206" /> <!-- Scop's Operetta -->
       <o id="410" duration="120" status="206" /> <!-- Puppet's Operetta -->
-      <o id="411" duration="120" status="206" /> <!-- Jester's Operetta -->
+      <o id="411" duration="120" status="206" unlearnable="true" /> <!-- Jester's Operetta -->
       <o id="412" duration="120" status="207" /> <!-- Gold Capriccio -->
-      <o id="413" duration="120" status="208" /> <!-- Devotee Serenade -->
+      <o id="413" duration="120" status="208" unlearnable="true" /> <!-- Devotee Serenade -->
       <o id="414" duration="120" status="209" /> <!-- Warding Round -->
       <o id="415" duration="120" status="210" /> <!-- Goblin Gavotte -->
       <o id="416" duration="120" status="211" unlearnable="true" /> <!-- Cactuar Fugue -->
@@ -1086,7 +1114,7 @@
       <o id="420" duration="120" status="214" /> <!-- Victory March -->
       <o id="421" duration="120" status="194" /> <!-- Battlefield Elegy -->
       <o id="422" duration="180" status="194" overwrites="{421}" /> <!-- Carnage Elegy -->
-      <o id="423" duration="240" status="194" overwrites="{421,422}" /> <!-- Massacre Elegy -->
+      <o id="423" duration="240" status="194" overwrites="{421,422}" unlearnable="true" /> <!-- Massacre Elegy -->
       <o id="424" duration="120" status="215" /> <!-- Sinewy Etude -->
       <o id="425" duration="120" status="215" /> <!-- Dextrous Etude -->
       <o id="426" duration="120" status="215" /> <!-- Vivacious Etude -->
@@ -1606,24 +1634,24 @@
   </elements>
   <bags>
     <update>
-      <o id="0" en="Inventory" jp="マイバッグ" api="inventory" access="Everywhere" command="inventory" equippable="true" />
-      <o id="1" en="Safe" jp="モグ金庫" api="safe" access="Mog House" command="bank" equippable="false" />
-      <o id="2" en="Storage" jp="収納家具" api="storage" access="Mog House" command="storage" equippable="false" />
-      <o id="3" en="Temporary" jp="テンポラリアイテム" api="temporary" access="Situational" command="temporary" equippable="false" />
-      <o id="4" en="Locker" jp="モグロッカー" api="locker" access="Mog House" command="locker" equippable="false" />
-      <o id="5" en="Satchel" jp="モグサッチェル" api="satchel" access="Everywhere" command="satchel" equippable="false" />
-      <o id="6" en="Sack" jp="モグサック" api="sack" access="Everywhere" command="sack" equippable="false" />
-      <o id="7" en="Case" jp="モグケース" api="case" access="Everywhere" command="case" equippable="false" />
-      <o id="8" en="Wardrobe" jp="モグワードローブ" api="wardrobe" access="Everywhere" command="wardrobe" equippable="true" />
-      <o id="9" en="Safe 2" jp="モグ金庫2" api="safe2" access="Mog House" command="bank2" equippable="false" />
-      <o id="10" en="Wardrobe 2" jp="モグワードローブ2" api="wardrobe2" access="Everywhere" command="wardrobe2" equippable="true" />
-      <o id="11" en="Wardrobe 3" jp="モグワードローブ3" api="wardrobe3" access="Everywhere" command="wardrobe3" equippable="true" />
-      <o id="12" en="Wardrobe 4" jp="モグワードローブ4" api="wardrobe4" access="Everywhere" command="wardrobe4" equippable="true" />
-      <o id="13" en="Wardrobe 5" jp="モグワードローブ5" api="wardrobe5" access="Everywhere" command="wardrobe5" equippable="true" />
-      <o id="14" en="Wardrobe 6" jp="モグワードローブ6" api="wardrobe6" access="Everywhere" command="wardrobe6" equippable="true" />
-      <o id="15" en="Wardrobe 7" jp="モグワードローブ7" api="wardrobe7" access="Everywhere" command="wardrobe7" equippable="true" />
-      <o id="16" en="Wardrobe 8" jp="モグワードローブ8" api="wardrobe8" access="Everywhere" command="wardrobe8" equippable="true" />
-      <o id="17" en="Recycle" jp="リサイクル" api="recycle" access="Everywhere" command="recycle" equippable="false" />
+      <o id="0" en="Inventory" ja="マイバッグ" api="inventory" access="Everywhere" command="inventory" equippable="true" />
+      <o id="1" en="Safe" ja="モグ金庫" api="safe" access="Mog House" command="bank" equippable="false" />
+      <o id="2" en="Storage" ja="収納家具" api="storage" access="Mog House" command="storage" equippable="false" />
+      <o id="3" en="Temporary" ja="テンポラリアイテム" api="temporary" access="Situational" command="temporary" equippable="false" />
+      <o id="4" en="Locker" ja="モグロッカー" api="locker" access="Mog House" command="locker" equippable="false" />
+      <o id="5" en="Satchel" ja="モグサッチェル" api="satchel" access="Everywhere" command="satchel" equippable="false" />
+      <o id="6" en="Sack" ja="モグサック" api="sack" access="Everywhere" command="sack" equippable="false" />
+      <o id="7" en="Case" ja="モグケース" api="case" access="Everywhere" command="case" equippable="false" />
+      <o id="8" en="Wardrobe" ja="モグワードローブ" api="wardrobe" access="Everywhere" command="wardrobe" equippable="true" />
+      <o id="9" en="Safe 2" ja="モグ金庫2" api="safe2" access="Mog House" command="bank2" equippable="false" />
+      <o id="10" en="Wardrobe 2" ja="モグワードローブ2" api="wardrobe2" access="Everywhere" command="wardrobe2" equippable="true" />
+      <o id="11" en="Wardrobe 3" ja="モグワードローブ3" api="wardrobe3" access="Everywhere" command="wardrobe3" equippable="true" />
+      <o id="12" en="Wardrobe 4" ja="モグワードローブ4" api="wardrobe4" access="Everywhere" command="wardrobe4" equippable="true" />
+      <o id="13" en="Wardrobe 5" ja="モグワードローブ5" api="wardrobe5" access="Everywhere" command="wardrobe5" equippable="true" />
+      <o id="14" en="Wardrobe 6" ja="モグワードローブ6" api="wardrobe6" access="Everywhere" command="wardrobe6" equippable="true" />
+      <o id="15" en="Wardrobe 7" ja="モグワードローブ7" api="wardrobe7" access="Everywhere" command="wardrobe7" equippable="true" />
+      <o id="16" en="Wardrobe 8" ja="モグワードローブ8" api="wardrobe8" access="Everywhere" command="wardrobe8" equippable="true" />
+      <o id="17" en="Recycle" ja="リサイクル" api="recycle" access="Everywhere" command="recycle" equippable="false" />
     </update>
   </bags>
   <chat>
@@ -3761,9 +3789,45 @@
       <o id="28" en="Storage Slip 28" ja="モグの預り帳【28】" item_id="29339" items="{21515, 21561, 21617, 21670, 21718, 21775, 21826, 21879, 21918, 21971, 22027, 22082, 22108, 22214, 21516, 21562, 21618, 21671, 21719, 21776, 21827, 21880, 21919, 21972, 22028, 22083, 22109, 22215, 21517, 21563, 21619, 21672, 21720, 21777, 21828, 21881, 21920, 21973, 22029, 22084, 22110, 22216, 21518, 21564, 21620, 21673, 21721, 21778, 21829, 21882, 21921, 21974, 22030, 22085, 22111, 22217, 21519, 21565, 21621, 21674, 21722, 21779, 21830, 21883, 21922, 21975, 22031, 22086, 22107, 22218, 22089}" /> <!--71-->
       <o id="29" en="Storage Slip 29" ja="モグの預り帳【29】" item_id="29340" items="{23085, 23152, 23219, 23286, 23353, 23086, 23153, 23220, 23287, 23354, 23087, 23154, 23221, 23288, 23355, 23088, 23155, 23222, 23289, 23356, 23089, 23156, 23223, 23290, 23357, 23090, 23157, 23224, 23291, 23358, 23091, 23158, 23225, 23292, 23359, 23092, 23159, 23226, 23293, 23360, 23093, 23160, 23227, 23294, 23361, 23094, 23161, 23228, 23295, 23362, 23095, 23162, 23229, 23296, 23363, 23096, 23163, 23230, 23297, 23364, 23097, 23164, 23231, 23298, 23365, 23098, 23165, 23232, 23299, 23366, 23099, 23166, 23233, 23300, 23367, 23100, 23167, 23234, 23301, 23368, 23101, 23168, 23235, 23302, 23369, 23102, 23169, 23236, 23303, 23370, 23103, 23170, 23237, 23304, 23371, 23104, 23171, 23238, 23305, 23372, 23105, 23172, 23239, 23306, 23373, 23106, 23173, 23240, 23307, 23374}" /> <!-- 110-->
       <o id="30" en="Storage Slip 30" ja="モグの預り帳【20】" item_id="29341" items="{23420, 23487, 23554, 23621, 23688, 23421, 23488, 23555, 23622, 23689, 23422, 23489, 23556, 23623, 23690, 23423, 23490, 23557, 23624, 23691, 23424, 23491, 23558, 23625, 23692, 23425, 23492, 23559, 23626, 23693, 23426, 23493, 23560, 23627, 23694, 23427, 23494, 23561, 23628, 23695, 23428, 23495, 23562, 23629, 23696, 23429, 23496, 23563, 23630, 23697, 23430, 23497, 23564, 23631, 23698, 23431, 23498, 23565, 23632, 23699, 23432, 23499, 23566, 23633, 23700, 23433, 23500, 23567, 23634, 23701, 23434, 23501, 23568, 23635, 23702, 23435, 23502, 23569, 23636, 23703, 23436, 23503, 23570, 23637, 23704, 23437, 23504, 23571, 23638, 23705, 23438, 23505, 23572, 23639, 23706, 23439, 23506, 23573, 23640, 23707, 23440, 23507, 23574, 23641, 23708, 23441, 23508, 23575, 23642, 23709}" /> <!-- 110-->
-      <o id="31" en="Storage Slip 31" ja="モグの預り帳【31】" item_id="29342" items="{23812, 23813, 23814, 23815, 23816, 23817, 23818, 23819, 23820, 23821, 23832, 23833, 23834, 23835, 23836, 23822, 23823, 23824, 23825, 23826, 23827, 23828, 23829, 23830, 23831, 23856, 23857, 23858, 23859, 23860, 23837, 23838, 23839, 23840, 23841, 23842, 23843, 23844, 23845, 23846, 23847, 23848, 23849, 23850, 23851, 23852, 23853, 23854, 23855, 23894, 24271, 22003, 25674, 26521, 25814, 25857, 25939, 21520, 21571, 21624, 21666, 21713, 21771, 21838, 21873, 21911, 21962, 22053, 22090, 22146, 22165, 20655, 26417}" /> <!-- 73-->
+      <o id="31" en="Storage Slip 31" ja="モグの預り帳【31】" item_id="29342" items="{23812, 23813, 23814, 23815, 23816, 23817, 23818, 23819, 23820, 23821, 23832, 23833, 23834, 23835, 23836, 23822, 23823, 23824, 23825, 23826, 23827, 23828, 23829, 23830, 23831, 23856, 23857, 23858, 23859, 23860, 23837, 23838, 23839, 23840, 23841, 23842, 23843, 23844, 23845, 23846, 23847, 23848, 23849, 23850, 23851, 23852, 23853, 23854, 23855, 23894, 24271, 22003, 25674, 26521, 25814, 25857, 25939, 21520, 21571, 21624, 21666, 21713, 21771, 21838, 21873, 21911, 21962, 22053, 22090, 22146, 22165, 20655, 26417, 24272, 3756, 21950}" /> <!-- 76-->
       <o id="32" en="Storage Slip 32" ja="モグの預り帳【32】" item_id="29343" items="{23895, 23940, 23985, 24030, 24075, 23896, 23941, 23986, 24031, 24076, 23897, 23942, 23987, 24032, 24077, 23898, 23943, 23988, 24033, 24078, 23899, 23944, 23989, 24034, 24079, 23900, 23945, 23990, 24035, 24080, 23901, 23946, 23991, 24036, 24081, 23902, 23947, 23992, 24037, 24082, 23903, 23948, 23993, 24038, 24083, 23904, 23949, 23994, 24039, 24084, 23905, 23950, 23995, 24040, 24085, 23906, 23951, 23996, 24041, 24086, 23907, 23952, 23997, 24042, 24087, 23908, 23953, 23998, 24043, 24088, 23909, 23954, 23999, 24044, 24089, 23910, 23955, 24000, 24045, 24090, 23911, 23956, 24001, 24046, 24091, 23912, 23957, 24002, 24047, 24092, 23913, 23958, 24003, 24048, 24093, 23914, 23959, 24004, 24049, 24094, 23915, 23960, 24005, 24050, 24095, 23916, 23961, 24006, 24051, 24096, 23917, 23962, 24007, 24052, 24097}" /> <!-- 115-->
       <o id="33" en="Storage Slip 33" ja="モグの預り帳【33】" item_id="29344" items="{23918, 23963, 24008, 24053, 24098, 23919, 23964, 24009, 24054, 24099, 23920, 23965, 24010, 24055, 24100, 23921, 23966, 24011, 24056, 24101, 23922, 23967, 24012, 24057, 24102, 23923, 23968, 24013, 24058, 24103, 23924, 23969, 24014, 24059, 24104, 23925, 23970, 24015, 24060, 24105, 23926, 23971, 24016, 24061, 24106, 23927, 23972, 24017, 24062, 24107, 23928, 23973, 24018, 24063, 24108, 23929, 23974, 24019, 24064, 24109, 23930, 23975, 24020, 24065, 24110, 23931, 23976, 24021, 24066, 24111, 23932, 23977, 24022, 24067, 24112, 23933, 23978, 24023, 24068, 24113, 23934, 23979, 24024, 24069, 24114, 23935, 23980, 24025, 24070, 24115, 23936, 23981, 24026, 24071, 24116, 23937, 23982, 24027, 24072, 24117, 23938, 23983, 24028, 24073, 24118, 23939, 23984, 24029, 24074, 24119}" /> <!-- 110-->
     </update>
   </slips>
+  <monstrosity>
+	<update>
+		<o id="14" unlearnable="true" /> <!-- Yztarg -->
+		<o id="24" unlearnable="true" /> <!-- Belladonna -->
+		<o id="25" unlearnable="true" /> <!-- Leafkin -->
+		<o id="26" unlearnable="true" /> <!-- Snapweed -->
+		<o id="39" unlearnable="true" /> <!-- Mantis -->
+		<o id="40" unlearnable="true" /> <!-- Kulox -->
+		<o id="41" unlearnable="true" /> <!-- Twitherym -->
+		<o id="42" unlearnable="true" /> <!-- Chapuli -->
+		<o id="50" unlearnable="true" /> <!-- Matamata -->
+		<o id="51" unlearnable="true" /> <!-- Worm -->
+		<o id="55" unlearnable="true" /> <!-- Botulus -->
+		<o id="59" unlearnable="true" /> <!-- Acuex -->
+		<o id="67" unlearnable="true" /> <!-- Pteraketos -->
+		<o id="68" unlearnable="true" /> <!-- Craklaw -->
+		<o id="77" unlearnable="true" /> <!-- Harpeia -->
+		<o id="78" unlearnable="true" /> <!-- Tulfaire -->
+		<o id="264" unlearnable="true" /> <!-- Lucerewe -->
+		<o id="265" unlearnable="true" /> <!-- Ovim -->
+		<o id="270" unlearnable="true" /> <!-- Bipedal Gnole -->
+		<o id="273" unlearnable="true" /> <!-- Flowering Treant -->
+		<o id="274" unlearnable="true" /> <!-- Scarlet-tinged Treant -->
+		<o id="275" unlearnable="true" /> <!-- Barren Treant -->
+		<o id="276" unlearnable="true" /> <!-- Necklaced Treant -->
+		<o id="286" unlearnable="true" /> <!-- Enlightened Mandragora -->
+		<o id="306" unlearnable="true" /> <!-- Coiled Wamouracampa -->
+		<o id="311" unlearnable="true" /> <!-- Vermilion Mantis -->
+		<o id="312" unlearnable="true" /> <!-- Russet Mantis -->
+		<o id="326" unlearnable="true" /> <!-- Vermilion Worm -->
+		<o id="327" unlearnable="true" /> <!-- Onyx Worm -->
+		<o id="328" unlearnable="true" /> <!-- Entozoon -->
+		<o id="361" unlearnable="true" /> <!-- Vermilion Harpeia -->
+		<o id="362" unlearnable="true" /> <!-- Alabaster Harpeia -->
+	</update>
+  </monstrosity>
 </fixes>
