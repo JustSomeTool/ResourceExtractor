@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.ComponentModel;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text.Json;
 using System.Xml.Linq;
 using Microsoft.Win32;
 using ResourceExtractor.Serializers;
@@ -172,7 +174,7 @@ internal class Program {
 	};
 
 	private static bool UpdateResourcesRepo { get; set; }
-	private static string FfxiDir { get; set; }
+	public static string FfxiDir { get; set; }
 	private static string OutDir { get; set; }
 
 	private static void Main(string[] args) {
@@ -229,6 +231,12 @@ internal class Program {
 
 			if (args.Contains("--analysis") || args.Contains("-a")) {
 				Analyzer.Analyze(model);
+				Console.WriteLine();
+			}
+
+			if (args.Contains("--images") || args.Contains("-i")) {
+				Console.WriteLine("Attempting to extract images...");
+				ImageExtractor.Extract(OutDir);
 				Console.WriteLine();
 			}
 
@@ -657,6 +665,23 @@ internal class Program {
 				}
 				xml.Root.ReplaceNodes(xml.Root.Elements().OrderBy(e => (uint) ((int?) e.Attribute("id") ?? 0)));
 				xml.Save(Path.Combine(OutDir, "resources", "xml", FormattableString.Invariant($"{name}.xml")));
+
+				var dictList = new List<Dictionary<string, object>>();
+                foreach (var obj in model[name])
+				{
+                    if (!IsValidName(ignore, obj)) {
+                        continue;
+                    }
+
+					var dict = new Dictionary<string, object>();
+					foreach (var pair in obj) 
+					{
+						dict[pair.Key] = pair.Value;
+					}
+					dictList.Add(dict);
+                }
+                var jsonOutput = JsonSerializer.Serialize(dictList, new JsonSerializerOptions() { WriteIndented = true});
+                File.WriteAllText(Path.Combine(OutDir, "resources", "json", FormattableString.Invariant($"{name}.json")), jsonOutput);
 			}
 		} catch {
 			DisplayError();
